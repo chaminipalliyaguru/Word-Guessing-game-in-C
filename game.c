@@ -6,7 +6,8 @@ int main(){
     char guessing_word[100];
     int checking;
 
-    printf("Let's strat.\n\n");
+    printf("Let's play a game! The objective of the game is to guess secret word. You will have five chances to guess.\nHint: It is a country name. ");
+    printf("\nLet's get started!\n\n");
 
     for(int i=1; i<=5; i++){
 
@@ -15,11 +16,11 @@ int main(){
 
         checking=strcmp(guessing_word,word);
         if(checking==0){
-            printf("Congradulations!");
+            printf("\n\nCongradulations! You guessed the secret word!");
             break;
         }
         else{
-            printf("Incorrect.");
+            printf("\n\nSorry. That is not the correct word word. Please guess again.\n");
         }
     }
 }
